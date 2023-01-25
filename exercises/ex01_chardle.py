@@ -33,9 +33,9 @@ if cinco[4] == uno:
     print(uno + " found at index 4")
     instancia = instancia + 1
 
-if instancia<1:
+if instancia < 1:
     print("No instances of " + uno + " found in " + cinco)
-if instancia==1:
+if instancia == 1:
     print(str(instancia) + " instance of " + uno + " found in " + cinco)
 else: 
     print(str(instancia) + " instances of " + uno + " found in " + cinco)
