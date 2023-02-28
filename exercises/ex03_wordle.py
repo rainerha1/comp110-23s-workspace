@@ -34,7 +34,7 @@ def emojified(guess: str, secret: str) -> str:
                 idx = idx + 1  # checks the next index
     return emoji_house  # returns list of emojis, one for each character in guess
 
-def input_guess(expected: int) -> int:
+def input_guess(expected: int) -> str:
     """Checks to see if input word is expected length"""
     guess: str = input(f"Enter a {expected} character word: ")  # asks user for an input of a certain length
     while len(guess) != expected:
@@ -55,6 +55,7 @@ def main() -> None:
                 print(f"You won in {turns}/6 turn")  # player wins on first turn
             else:
                 print(f"You won in {turns}/6 turns! ")  # player wins on any other turn
+            return None
         else:
             print(emojified(code_guess, secret))  # prints list of emojis for the word guessed by player
             turns = turns + 1  # goes to next turn       
